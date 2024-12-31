@@ -1,8 +1,9 @@
 #ifndef MENU_H
 #define MENU_H
+#include <Arduino.h>
 
 #include <string>
-
+#include <vector>
 // Global variable declarations
 extern bool capsuleStates[];                 // Capsule states (ON/OFF)
 extern std::string configureMenuValues[];    // Configurable item values
@@ -18,5 +19,12 @@ void handleCapsuleTouch(int x, int y);       // Handle touch events for capsule 
 void returnToMainMenu();                     // Return to the main menu
 void openSelectionMenu(int index);           // Open a selection menu for configurable items
 void handleTextInput(int index);             // Handle user-enterable input (e.g., Callsign, Frequency)
+
+// Function declarations
+void loadInitialValues();
+bool readFileAsBool(const char* path);
+String loadFileAsString(const char* path);
+std::vector<std::string> readLinesFromFile(const char* path);
+void writeFile(const char* path, const char* value);
 
 #endif // MENU_H
