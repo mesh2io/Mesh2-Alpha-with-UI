@@ -1,0 +1,1 @@
+[{"username":"User1","lora_address":"ADDRESS1"},{"username":"User2","lora_address":"ADDRESS2"},{"username":"User3","lora_address":"ADDRESS3"},{"username":"User4","lora_address":"ADDRESS4"},{"username":"User5","lora_address":"ADDRESS5"}]
